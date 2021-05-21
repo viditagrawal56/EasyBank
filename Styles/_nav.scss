@@ -1,0 +1,67 @@
+nav {
+  grid-template-areas: "logo navs btn";
+  position: relative;
+  height: 12vh;
+  align-items: center;
+  padding: 20px 100px;
+  display: grid;
+  background-color: var(--White);
+  z-index: 2;
+}
+
+.logo {
+  grid-area: "logo";
+}
+
+.navs {
+  grid-area: "navs";
+  position: relative;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+li a {
+  color: var(--Grayish-Blue);
+}
+
+.navs ul li a:hover {
+  padding-bottom: 1.7rem;
+  border-bottom: 5px solid;
+  border-bottom-color: var(--Bright-Cyan);
+}
+
+.cta-btn {
+  grid-area: "btn";
+  position: relative;
+  margin-left: auto;
+}
+
+.cta-btn button {
+  font-family: "Public Sans";
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 160px;
+  border-radius: 25px;
+  background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.cta-btn button:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 45px;
+  width: 160px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.651);
+}

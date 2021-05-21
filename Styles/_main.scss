@@ -1,0 +1,51 @@
+main {
+  display: grid;
+  grid-template-columns: 45vw 55vw;
+  grid-template-rows: 88vh;
+  grid-template-areas: "title img";
+  font-family: "Public Sans";
+}
+
+.title {
+  display: flex;
+  grid-area: "title";
+  align-items: center;
+  padding: 0 7rem;
+
+  h1 {
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--Dark-Blue);
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    color: var(--Grayish-Blue);
+  }
+
+  button {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.intro-img {
+  grid-area: "img";
+  position: relative;
+}
+
+.bg {
+  height: auto;
+  position: relative;
+  top: -250px;
+  right: 150px;
+  z-index: -1;
+}
+
+.mobile {
+  width: 100%;
+  position: absolute;
+  top: -90px;
+  right: -70px;
+  z-index: 0;
+}
